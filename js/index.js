@@ -53,6 +53,7 @@ function calcularImc() {
     const edadResult = document.getElementById("edad-result");
     const alturaResult = document.getElementById("altura-result");
     const sexResult = document.getElementById("sexo");
+    const descriptionResult = document.getElementById("description-result");
     let edad = document.getElementById("edad");
     let peso = document.getElementById("peso");
     let altura = document.getElementById("altura");
@@ -65,4 +66,5 @@ function calcularImc() {
     edadResult.innerHTML = `${edad.value} Años`;
     imcResult.innerHTML = imc.toFixed(2);
     imcResult.style.color = description.color;
+    descriptionResult.innerHTML = description.message;
 }
